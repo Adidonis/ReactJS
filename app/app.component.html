@@ -1,0 +1,38 @@
+<nav class="navbar navbar-light" style="background-color: #cbe7fa;">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#">
+      <img src="assets/image/Tekmindz.png" alt="" width="100" height="28" class="d-inline-block align-text-top"
+        class='texthighlisght'>
+      |
+    </a>
+    <form class='d-flex'>
+      <a class="navbar-brand" href="https://www.tekmindz.com/">About Us</a>
+      <a class="navbar-brand" on click routerLink="/Table_Entries" routerLinkActive="active">Table Entries</a>
+      <a class="navbar-brand" on click routerLink="/ngxCharts" routerLinkActive="active">ngxCharts</a>
+      <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+      <button class="btn btn-outline-success" type="submit">Search</button>
+    </form>
+  </div>
+</nav>
+
+<!-- <app-fruit-info></app-fruit-info>  -->
+
+<div class="container">
+  <ul class="nav nav-tabs">
+    <li class="nav-item">
+      <a class="nav-link" on click routerLink="ngxCharts" routerLinkActive="active">Bar Chart</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" on click routerLink="ngxCharts" routerLinkActive="active">Line Chart</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" on click routerLink="ngxCharts" routerLinkActive="active">Pie Chart</a>
+    </li>
+  </ul>
+ 
+  <div class="container">
+    <router-outlet></router-outlet>
+    <app-charts></app-charts>
+    <app-pie-chart></app-pie-chart>
+  </div>
+  
